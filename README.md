@@ -238,4 +238,3 @@ HTTP/1.1 200 OK
 
 ---
 
-Bu `README.md`, API kapsamını, bağımlılıkları, Swagger dokümantasyonunu ve API ile etkileşim kurabileceğiniz örnek istekleri içerir. Uygulamayı çalıştırdıktan sonra Swagger arayüzünü kullanarak API’yi daha kolay keşfedebilirsiniz.
