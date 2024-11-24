@@ -27,32 +27,32 @@ Bu proje, canlı bahis uygulaması olup, kullanıcıların maçları ve kuponlar
 
 ### Maç Endpoints
 1. **Maç Ekle**
-   - `POST /api/v1/matches`
+   - `POST /api/v1/match`
    - Açıklama: Yeni bir maç ekler.
 
 2. **Tüm Maçları Getir**
-   - `GET /api/v1/matches`
+   - `GET /api/v1/match`
    - Açıklama: Sayfalı bir şekilde tüm maçları listeler.
 
 3. **Maç Sil**
-   - `DELETE /api/v1/matches/{id}`
+   - `DELETE /api/v1/match/{id}`
    - Açıklama: Verilen ID ile bir maçı siler.
 
 4. **Maç Oran Geçmişini Getir**
-   - `GET /api/v1/matches/{matchId}/odds-history`
+   - `GET /api/v1/match/{matchId}/odds-history`
    - Açıklama: Verilen maç ID’si için oran geçmişini getirir.
 
 ### Kupon Endpoints
 1. **Kupon Ekle**
-   - `POST /api/v1/coupons`
+   - `POST /api/v1/coupon`
    - Açıklama: Yeni bir kupon ekler.
 
 2. **Tüm Kuponları Getir**
-   - `GET /api/v1/coupons`
+   - `GET /api/v1/coupon`
    - Açıklama: Sayfalı bir şekilde tüm kuponları listeler.
 
 3. **Kupon Sil**
-   - `DELETE /api/v1/coupons?id={id}`
+   - `DELETE /api/v1/coupon?id={id}`
    - Açıklama: Verilen ID ile bir kuponu siler.
 
 ---
@@ -63,7 +63,7 @@ Bu proje, canlı bahis uygulaması olup, kullanıcıların maçları ve kuponlar
 
 **İstek:**
 ```bash
-POST /api/v1/matches
+POST /api/v1/match
 Content-Type: application/json
 
 {
@@ -93,7 +93,7 @@ Content-Type: application/json
 
 **İstek:**
 ```bash
-GET /api/v1/matches?page=0&pageSize=10
+GET /api/v1/match?page=0&pageSize=10
 ```
 
 **Cevap:**
@@ -123,7 +123,7 @@ GET /api/v1/matches?page=0&pageSize=10
 
 **İstek:**
 ```bash
-DELETE /api/v1/matches/1
+DELETE /api/v1/match/1
 ```
 
 **Cevap:**
@@ -135,7 +135,7 @@ HTTP/1.1 200 OK
 
 **İstek:**
 ```bash
-GET /api/v1/matches/1/odds-history?page=0&pageSize=10
+GET /api/v1/match/1/odds-history?page=0&pageSize=10
 ```
 
 **Cevap:**
@@ -163,7 +163,7 @@ GET /api/v1/matches/1/odds-history?page=0&pageSize=10
 
 **İstek:**
 ```bash
-POST /api/v1/coupons
+POST /api/v1/coupon
 Content-Type: application/json
 
 {
@@ -196,7 +196,7 @@ Content-Type: application/json
 
 **İstek:**
 ```bash
-GET /api/v1/coupons?page=0&pageSize=10
+GET /api/v1/coupon?page=0&pageSize=10
 ```
 
 **Cevap:**
@@ -228,7 +228,7 @@ GET /api/v1/coupons?page=0&pageSize=10
 
 **İstek:**
 ```bash
-DELETE /api/v1/coupons?id=1
+DELETE /api/v1/coupon?id=1
 ```
 
 **Cevap:**
